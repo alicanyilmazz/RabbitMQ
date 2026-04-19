@@ -118,6 +118,4 @@ This architecture makes systems more maintainable, scalable, and resilient.
 
 ---
 
-## Architecture Diagram
-
-![RabbitMQ Diagram](./rabbitmq-diagram.png)
+<img width="2065" height="496" alt="Gemini_Generated_Image_7kvpnd7kvpnd7kvp" src="https://github.com/user-attachments/assets/2763432f-815e-4691-9fbb-beba98b47429" />
