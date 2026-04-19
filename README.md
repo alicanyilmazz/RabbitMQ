@@ -188,3 +188,22 @@ By using RabbitMQ in this flow, we can:
 
 As a result, the user gets a faster response, while the watermarking operation is completed in the background.
 
+<img width="1600" height="670" alt="Gemini_Generated_Image_bzgji3bzgji3bzgj" src="https://github.com/user-attachments/assets/c607ffbe-0ebc-431b-8651-71d87f87cc20" />
+
+## Example Scenario: Excel Generation Process
+
+In this scenario, the web application does not generate the Excel file during the HTTP request.  
+Instead, it publishes a message to RabbitMQ and returns a faster response to the user.
+
+One or more worker services listen to the queue and handle the Excel generation process asynchronously in the background.
+
+This approach provides several benefits:
+
+- reduces request/response time
+- moves heavy file generation work out of the main application flow
+- improves user experience
+- supports parallel processing with multiple workers
+- increases scalability and system responsiveness
+
+As a result, the web application remains lightweight and responsive, while Excel files are generated in the background by dedicated worker services.
+
