@@ -169,3 +169,6 @@ Applications become easier to maintain, extend, and evolve over time.
 
 ## Summary
 RabbitMQ is useful because it improves performance, supports background processing, enables asynchronous communication, and helps build scalable and loosely coupled systems.
+
+<img width="1532" height="688" alt="Gemini_Generated_Image_8vezl48vezl48vez" src="https://github.com/user-attachments/assets/8293fa5c-98e2-4fdb-8eb2-5ab0efc7ffa0" />
+
