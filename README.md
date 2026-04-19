@@ -172,3 +172,19 @@ RabbitMQ is useful because it improves performance, supports background processi
 
 <img width="1532" height="688" alt="Gemini_Generated_Image_8vezl48vezl48vez" src="https://github.com/user-attachments/assets/8293fa5c-98e2-4fdb-8eb2-5ab0efc7ffa0" />
 
+## Example Scenario: Image Watermarking
+
+In this example, the web application does not perform the watermarking process directly during the HTTP request.  
+Instead, it publishes a message to RabbitMQ.
+
+A background service consumes that message and performs the watermark operation asynchronously on the image files.
+
+By using RabbitMQ in this flow, we can:
+
+- shorten the response time of the web application
+- handle time-consuming tasks in the background
+- reduce pressure on the main application
+- build a more scalable and loosely coupled architecture
+
+As a result, the user gets a faster response, while the watermarking operation is completed in the background.
+
