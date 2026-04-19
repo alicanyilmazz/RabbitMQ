@@ -1,5 +1,7 @@
+
 # RabbitMQ
 
+<img width="1686" height="624" alt="Gemini_Generated_Image_jtjmu3jtjmu3jtjm" src="https://github.com/user-attachments/assets/8a21abff-9d5c-4613-a60e-3e274c81012c" />
 
 # RabbitMQ Overview
 
