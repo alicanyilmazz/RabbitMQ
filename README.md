@@ -119,3 +119,53 @@ This architecture makes systems more maintainable, scalable, and resilient.
 ---
 
 <img width="2065" height="496" alt="Gemini_Generated_Image_7kvpnd7kvpnd7kvp" src="https://github.com/user-attachments/assets/2763432f-815e-4691-9fbb-beba98b47429" />
+
+## Why Should We Use RabbitMQ?
+
+RabbitMQ is a great choice when building modern, scalable, and distributed systems. It helps applications communicate in an asynchronous and reliable way without being tightly coupled to each other.
+
+### 1. Reducing Request/Response Times
+In traditional synchronous communication, one service often has to wait for another service to finish its work before returning a response. This can increase response times and negatively affect user experience.
+
+RabbitMQ helps reduce this delay by allowing messages to be queued and processed independently.  
+Instead of making the client wait for every operation to complete, the system can respond quickly and continue the heavy work in the background.
+
+### 2. Running Long-Running Tasks in the Background
+Some operations take time, such as:
+
+- sending emails
+- generating reports
+- processing files
+- resizing images
+- calling external services
+- executing business workflows
+
+If these tasks are handled directly during the request, the application may become slow or unresponsive.  
+RabbitMQ allows these jobs to be offloaded to background consumers, improving application performance and responsiveness.
+
+### 3. Enabling Asynchronous Communication in Microservices
+In a microservices architecture, services should communicate in a way that keeps them independent and loosely coupled.
+
+RabbitMQ makes this possible by acting as a message broker between services.  
+A service can publish a message without needing to know exactly when or how another service will process it.
+
+This provides several advantages:
+
+- better scalability
+- improved fault tolerance
+- loose coupling between services
+- easier integration between different technologies
+- more flexible system design
+
+### 4. Improving Reliability and Load Distribution
+RabbitMQ can help distribute workloads across multiple consumers.  
+If message traffic increases, more consumers can be added to process messages in parallel.
+
+This makes it easier to scale the system and handle high workloads more efficiently.
+
+### 5. Supporting Better System Design
+By separating message producers from message consumers, RabbitMQ encourages cleaner architecture.  
+Applications become easier to maintain, extend, and evolve over time.
+
+## Summary
+RabbitMQ is useful because it improves performance, supports background processing, enables asynchronous communication, and helps build scalable and loosely coupled systems.
