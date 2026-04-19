@@ -1,11 +1,6 @@
-
-# RabbitMQ
-
-<img width="1686" height="624" alt="Gemini_Generated_Image_jtjmu3jtjmu3jtjm" src="https://github.com/user-attachments/assets/8a21abff-9d5c-4613-a60e-3e274c81012c" />
-
 # RabbitMQ Overview
 
-<img width="1746" height="324" alt="image" src="https://github.com/user-attachments/assets/adc948b4-159b-41ab-9b94-0bee62002114" />
+<img width="1686" height="624" alt="Gemini_Generated_Image_jtjmu3jtjmu3jtjm" src="https://github.com/user-attachments/assets/8a21abff-9d5c-4613-a60e-3e274c81012c" />
 
 RabbitMQ is a **message broker** that enables reliable communication between different applications and services.  
 It helps systems exchange data asynchronously, making applications more **scalable**, **flexible**, and **loosely coupled**.
