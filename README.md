@@ -211,7 +211,7 @@ By using RabbitMQ in this flow, we can:
 
 As a result, the user gets a faster response, while the watermarking operation is completed in the background.
 
-<img width="1600" height="670" alt="Gemini_Generated_Image_bzgji3bzgji3bzgj" src="https://github.com/user-attachments/assets/c607ffbe-0ebc-431b-8651-71d87f87cc20" />
+<img width="800" height="400" alt="Gemini_Generated_Image_bzgji3bzgji3bzgj" src="https://github.com/user-attachments/assets/c607ffbe-0ebc-431b-8651-71d87f87cc20" />
 
 ## Example Scenario: Excel Generation Process
 
