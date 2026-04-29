@@ -169,6 +169,12 @@ Applications become easier to maintain, extend, and evolve over time.
 
 <img width="1921" height="819" alt="ChatGPT Image 29 Nis 2026 23_21_29" src="https://github.com/user-attachments/assets/9892c9af-6834-4b4d-832b-5b9f44ab3b4a" />
 
+## Running RabbitMQ with Cloud
+
+```bash
+https://www.cloudamqp.com
+```
+
 ## Running RabbitMQ with Docker
 
 To run RabbitMQ with the management UI enabled, use the official `management` image and expose both required ports:
