@@ -167,6 +167,23 @@ This makes it easier to scale the system and handle high workloads more efficien
 By separating message producers from message consumers, RabbitMQ encourages cleaner architecture.  
 Applications become easier to maintain, extend, and evolve over time.
 
+<img width="1921" height="819" alt="ChatGPT Image 29 Nis 2026 23_21_29" src="https://github.com/user-attachments/assets/9892c9af-6834-4b4d-832b-5b9f44ab3b4a" />
+
+## Running RabbitMQ with Docker
+
+To run RabbitMQ with the management UI enabled, use the official `management` image and expose both required ports:
+
+- `5672` → RabbitMQ AMQP port
+- `15672` → RabbitMQ Management UI
+
+### Run RabbitMQ Container
+
+```bash
+docker run -d --hostname my-rabbit --name RabbitMQContainerx -p 5672:5672 -p 15672:15672 rabbitmq:4.3.0-management
+```
+```bash
+docker run -d --hostname my-rabbit --name RabbitMQContainerx -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin123 rabbitmq:4.3.0-management
+```
 ## Summary
 RabbitMQ is useful because it improves performance, supports background processing, enables asynchronous communication, and helps build scalable and loosely coupled systems.
 
