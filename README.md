@@ -167,7 +167,7 @@ This makes it easier to scale the system and handle high workloads more efficien
 By separating message producers from message consumers, RabbitMQ encourages cleaner architecture.  
 Applications become easier to maintain, extend, and evolve over time.
 
-<img width="800" height="400" alt="ChatGPT Image 29 Nis 2026 23_21_29" src="https://github.com/user-attachments/assets/9892c9af-6834-4b4d-832b-5b9f44ab3b4a" />
+<img width="1200" height="200" alt="ChatGPT Image 29 Nis 2026 23_21_29" src="https://github.com/user-attachments/assets/9892c9af-6834-4b4d-832b-5b9f44ab3b4a" />
 
 ## Running RabbitMQ with Cloud
 
