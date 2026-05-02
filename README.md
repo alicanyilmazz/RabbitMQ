@@ -19,6 +19,29 @@ If you are using Docker, you can start RabbitMQ with the Management UI enabled b
 docker run -d --hostname rabbitmq-host --name rabbitmq-container -p 5672:5672 -p 15672:15672 rabbitmq:management
 ```
 
+### Creating a Connection
+
+```bash
+var factory = new ConnectionFactory
+{
+    Uri = new Uri("amqp://guest:guest@localhost:5672/")
+};
+```
+
+> This line opens a connection to the RabbitMQ server.
+> `await` using ensures that the connection is disposed properly when the application finishes.
+
+### Creating a Channel
+
+```bash
+var factory = new ConnectionFactory
+{
+    Uri = new Uri("amqp://guest:guest@localhost:5672/")
+};
+```
+
+### Creating a Channel
+
 ```bash
 var factory = new ConnectionFactory
 {
