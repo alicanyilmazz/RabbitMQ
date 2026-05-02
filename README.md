@@ -29,11 +29,14 @@ var factory = new ConnectionFactory
 };
 ```
 
-amqp      -> Protocol used by RabbitMQ clients
-guest     -> Username
-guest     -> Password
-localhost -> RabbitMQ server address
-5672      -> AMQP port
+| Key       | Description                          |
+|-----------|--------------------------------------|
+| AMQP      | Protocol used by RabbitMQ clients    |
+| guest     | Username                             |
+| guest     | Password                             |
+| localhost | RabbitMQ server address              |
+| 5672      | AMQP port                            |
+
 
 The ConnectionFactory is responsible for creating a connection to RabbitMQ.
 
