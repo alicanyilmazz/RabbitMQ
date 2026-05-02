@@ -19,9 +19,6 @@ If you are using Docker, you can start RabbitMQ with the Management UI enabled b
 docker run -d --hostname rabbitmq-host --name rabbitmq-container -p 5672:5672 -p 15672:15672 rabbitmq:management
 ```
 
-Username: guest
-Password: guest
-
 ```bash
 var factory = new ConnectionFactory
 {
