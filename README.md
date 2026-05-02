@@ -1,4 +1,7 @@
+
 # RabbitMQ
+
+<img width="1692" height="930" alt="789ChatGPT Image May 2, 2026, 05_51_21 PM" src="https://github.com/user-attachments/assets/6aac4c60-b30a-4f32-b28f-099a144a14c1" />
 
 > Docker Command
 ```bash
