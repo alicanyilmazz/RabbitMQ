@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 var factory = new ConnectionFactory
 {
@@ -17,13 +18,23 @@ await channel.QueueDeclareAsync(
     arguments: null
 );
 
-var message = "Hello World";
-var body = Encoding.UTF8.GetBytes(message);
+var consumer = new AsyncEventingBasicConsumer(channel);
 
-await channel.BasicPublishAsync(
-    exchange: string.Empty,
-    routingKey: "hello-queue",
-    body: body
+consumer.ReceivedAsync += async (sender, eventArgs) =>
+{
+    var body = eventArgs.Body.ToArray();
+    var message = Encoding.UTF8.GetString(body);
+
+    Console.WriteLine($"Message received: {message}");
+
+    await Task.CompletedTask;
+};
+
+await channel.BasicConsumeAsync(
+    queue: "hello-queue",
+    autoAck: true,
+    consumer: consumer
 );
 
-Console.WriteLine($"Message sent: {message}");
+Console.WriteLine("Subscriber is waiting for messages...");
+Console.ReadLine();
